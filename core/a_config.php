@@ -16,7 +16,7 @@
  * The comment below will appear at the top of every page on your site
  */
 ?>
-<!--Example Website, created by Angus Goody 05/2020-->
+<!--Rocket PHP Boilerplate, created by Angus Goody 07/2020-->
 
 <?php
 
@@ -24,7 +24,7 @@
 $NAV_PAGE="index";
 $CURRENT_PAGE="index";
 $PAGE_TITLE="Home";
-$PAGE_DESCRIPTION="Welcome to Example Website";
+$PAGE_DESCRIPTION="Welcome to Rocket Boilerplate";
 
 
 //Find the path of the current page
@@ -50,7 +50,7 @@ switch ($first_parent) {
 	case '/page_2.php':
 		$NAV_PAGE="page_2";
 		$CURRENT_PAGE="page_2";
-		$PAGE_TITLE="Page 2 | Example Site";
+		$PAGE_TITLE="Page 2 | Rocket Boilerplate";
 		$PAGE_DESCRIPTION="This is a description for Page 2";
 		break;
 
@@ -58,7 +58,7 @@ switch ($first_parent) {
 	case '/page_3.php':
 		$NAV_PAGE="page_3";
 		$CURRENT_PAGE="page_3";
-		$PAGE_TITLE="Page 3 | Example Site";
+		$PAGE_TITLE="Page 3 | Rocket Boilerplate";
 		$PAGE_DESCRIPTION="This is a description for Page 3";
 		break;
 
@@ -66,18 +66,18 @@ switch ($first_parent) {
 	case '/subpages':
 		$NAV_PAGE="subpages";
 		$CURRENT_PAGE="subpages";
-		$PAGE_TITLE="Subpage Home | Example Site";
+		$PAGE_TITLE="Subpage Home | Rocket Boilerplate";
 		$PAGE_DESCRIPTION="This is a description for The index of subpages_1";
 		//A seperate switch for the subpages of this folder
 		switch ($file_base) {
 			case 'sub_page_2.php':
 				$CURRENT_PAGE="subpages/sub_page_2";
-				$PAGE_TITLE="Subpage 2 | Example Site";
+				$PAGE_TITLE="Subpage 2 | Rocket Boilerplate";
 				$PAGE_DESCRIPTION="This is the second subpage on the site";
 				break;
 			case 'sub_page_3.php':
 				$CURRENT_PAGE="subpages/sub_page_3";
-				$PAGE_TITLE="Subpage 3 | Example Site";
+				$PAGE_TITLE="Subpage 3 | Rocket Boilerplate";
 				$PAGE_DESCRIPTION="This is the third subpage on the site";
 				break;
 		}
@@ -87,8 +87,8 @@ switch ($first_parent) {
 	default:
 		$NAV_PAGE="index";
 		$CURRENT_PAGE="index";
-		$PAGE_TITLE="Home | Example Site";
-		$PAGE_DESCRIPTION="Welcome to Example Site";
+		$PAGE_TITLE="Home | Rocket Boilerplate";
+		$PAGE_DESCRIPTION="Welcome to Rocket Boilerplate";
 		break;
 }
 

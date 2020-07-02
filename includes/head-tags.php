@@ -10,8 +10,8 @@
 <meta name="description" content="<?php print $PAGE_DESCRIPTION;?>">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="keywords" content="example,tags,go,here">
-<meta name="geo.placename" content="location">
+<meta name="keywords" content="example,tags,go,here,rocket,php">
+<meta name="geo.placename" content="Earth">
 <meta name="author" content="Angus Goody">
 <!--Canonical-->
 <link rel="canonical" href="<?php echo $PAGE_CANONICAL ?>"/>
