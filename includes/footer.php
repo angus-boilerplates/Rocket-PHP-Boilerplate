@@ -7,5 +7,5 @@
 ?>
 
 <footer>
-	&copy 2020 <a id="rocketLink" href="https://github.com/angusgoody/Rocket-PHP-Boilerplate">Rocket PHP Boilerplate</a>
+	&copy 2020 <a id="rocketLink" target="_blank" href="https://github.com/angusgoody/Rocket-PHP-Boilerplate">Rocket PHP Boilerplate</a>
 </footer>
