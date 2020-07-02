@@ -3,7 +3,6 @@
  * This is the Head-Tags file, this is where you should place HTML tags
  * You want to appear on all your pages, such as Canonical, Stylesheets,
  * Descriptions, Viewports etc
- *
  */
 ?>
 <title><?php print $PAGE_TITLE;?></title>
@@ -19,3 +18,5 @@
 <!--Favicons-->
 <link rel="shortcut icon" type="image/png" href=""/>
 <link rel="apple-touch-icon" href="">
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/resources/styles/styles.css">

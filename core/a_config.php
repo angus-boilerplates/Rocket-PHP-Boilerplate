@@ -24,7 +24,7 @@
 $NAV_PAGE="index";
 $CURRENT_PAGE="index";
 $PAGE_TITLE="Home";
-$PAGE_DESCRIPTION="Welcome to Example Website"
+$PAGE_DESCRIPTION="Welcome to Example Website";
 
 
 //Find the path of the current page
@@ -47,7 +47,7 @@ $PAGE_CANONICAL="https://".$_SERVER['SERVER_NAME'].$full_path;
 switch ($first_parent) {
 
 	//Page 2
-	case '/page2.php':
+	case '/page_2.php':
 		$NAV_PAGE="page_2";
 		$CURRENT_PAGE="page_2";
 		$PAGE_TITLE="Page 2 | Example Site";
@@ -55,19 +55,19 @@ switch ($first_parent) {
 		break;
 
 	//Page 3
-	case '/page3.php':
+	case '/page_3.php':
 		$NAV_PAGE="page_3";
 		$CURRENT_PAGE="page_3";
 		$PAGE_TITLE="Page 3 | Example Site";
 		$PAGE_DESCRIPTION="This is a description for Page 3";
 		break;
 
-	//Subpage Example
+	//Subpage Example (This example site does not have subpages, delete if not needed)
 	case '/subpages':
 		$NAV_PAGE="subpages";
 		$CURRENT_PAGE="subpages";
 		$PAGE_TITLE="Subpage Home | Example Site";
-		$PAGE_DESCRIPTION="This is a description for The index of subpages_1"
+		$PAGE_DESCRIPTION="This is a description for The index of subpages_1";
 		//A seperate switch for the subpages of this folder
 		switch ($file_base) {
 			case 'sub_page_2.php':
