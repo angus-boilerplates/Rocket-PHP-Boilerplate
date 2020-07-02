@@ -7,5 +7,5 @@
 ?>
 
 <footer>
-	&copy 2020 Rocket PHP Boilerplate
+	&copy 2020 <a id="rocketLink" href="#">Rocket PHP Boilerplate</a>
 </footer>

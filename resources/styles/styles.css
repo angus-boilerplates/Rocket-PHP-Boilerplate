@@ -33,6 +33,10 @@ body{
 	margin-top: 20px;
 }
 
+#rocketLink{
+	color: #5B5D5D;
+}
+
 /*======================
  N A V B A R
 =======================*/
@@ -68,7 +72,7 @@ footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 	background-color: #D6E1E4;
 	text-align: center;
 }
