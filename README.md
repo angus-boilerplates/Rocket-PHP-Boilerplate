@@ -1,2 +1,2 @@
-# php_website_boilerplate
-A boilerplate for making a website using php. Features PHP includes to make updating your site much easier
+# Rocket PHP Boilerplate 🚀
+A boilerplate for making a website using php. Features a responsive navbar and media queries. A good starting point for PHP projects.
