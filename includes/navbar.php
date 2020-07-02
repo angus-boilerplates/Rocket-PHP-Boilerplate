@@ -5,7 +5,13 @@
  * the navbar for all pages
  */
 
-//Will set the current navigation page to have ID/CLASS: currentNavItem
+/*
+ ===============
+ This function adds the "currentNavItem"
+ to the approprirate page ID, ensuring the active
+ page is displayed on the navigation bar ie. has the green colour
+ ===============
+ */
 function isCurrent($pageName){
 	global $NAV_PAGE;
 	//If the global matches the argument set as current

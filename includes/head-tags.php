@@ -16,7 +16,7 @@
 <!--Canonical-->
 <link rel="canonical" href="<?php echo $PAGE_CANONICAL ?>"/>
 <!--Favicons-->
-<link rel="shortcut icon" type="image/png" href=""/>
-<link rel="apple-touch-icon" href="">
+<link rel="shortcut icon" type="image/png" href="/resources/images/core/favicon.png"/>
+<link rel="apple-touch-icon" href="/resources/images/core/apple-touch-icon.png">
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/resources/styles/styles.css">

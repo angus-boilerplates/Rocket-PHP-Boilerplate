@@ -63,6 +63,8 @@ nav ul li a{
 	text-decoration: none;
 	color: #2E3031;
 	cursor: pointer;
+	margin: auto;
+	padding: 1rem;
 }
 
 /*======================
