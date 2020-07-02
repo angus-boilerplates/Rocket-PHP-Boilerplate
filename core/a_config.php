@@ -20,13 +20,31 @@
 
 <?php
 
-//Find the path of the current page
-$current_path = $_SERVER["PHP_SELF"];
+//Setup Global defaults to avoid undefined errors (These will get overwritten)
+$NAV_PAGE="index";
+$CURRENT_PAGE="index";
+$PAGE_TITLE="Home";
+$PAGE_DESCRIPTION="Welcome to Example Website"
 
-//Create the Canonical Tag
+
+//Find the path of the current page
+$full_path = $_SERVER["PHP_SELF"];
+$first_parent = dirname($full_path);
+
+//If the current file is in root folder we don't need it's parent directory
+if ($first_parent == "/"){
+	$first_parent = $full_path;
+}
+
+//Create the Canonical Tag (Change protocols etc to suit your server)
+$PAGE_CANONICAL="https://".$_SERVER['SERVER_NAME'].$full_path;
+//Uncomment to remove .php from canonical
+//$PAGE_CANONICAL="https://".$_SERVER['SERVER_NAME'].preg_replace('/\\.[^.\\s]{3,4}$/', '', $full_path);
+
+
 
 //Switch statement for pages
-switch () {
+switch ($first_parent) {
 
 	//Page 2
 	case '/page2.php':
