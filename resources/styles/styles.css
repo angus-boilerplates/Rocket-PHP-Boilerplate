@@ -42,29 +42,20 @@ body{
 
 nav{
 	background-color: #D6E1E4;
-}
-
-nav ul{
 	display: flex;
 	flex-direction: column;
 }
 
-nav ul li{
-	list-style: none;
-	text-decoration: none;
-	padding: 1rem;
-}
 
-nav ul li:hover{
-	background-color: #BFC8CC;
-}
-
-nav ul li a{
+nav a{
 	text-decoration: none;
 	color: #2E3031;
 	cursor: pointer;
-	margin: auto;
 	padding: 1rem;
+}
+
+nav a:hover{
+	background-color: #BFC8CC;
 }
 
 /*======================
@@ -97,7 +88,7 @@ M E D I A  Q U E R I E S
 	#wrapper{
 		width: 85%;
 	}
-	 nav ul{
+	 nav{
 	 	flex-direction: row;
 	 }
 }
