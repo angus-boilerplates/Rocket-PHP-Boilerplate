@@ -1,5 +1,51 @@
 
+/*
+ * Stylsheet
+ */
 
-h1{
-	color: red;
+
+/*======================
+ R E S E T
+=======================*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*======================
+ B O D Y
+=======================*/
+
+body{
+	font-family: "Arial";
+	color: grey;
+}
+
+/*======================
+ N A V B A R
+=======================*/
+
+#currentNavItem{
+	background-color: #4CCE98;
+	color: #1F553F;
+}
+
+nav{
+	background-color: #D6E1E4;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+}
+
+
+nav ul li{
+	list-style: none;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #2E3031;
 }
