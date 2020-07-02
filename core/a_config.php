@@ -30,7 +30,7 @@ $PAGE_DESCRIPTION="Welcome to Example Website"
 //Find the path of the current page
 $full_path = $_SERVER["PHP_SELF"];
 $first_parent = dirname($full_path);
-
+$file_base = basename($full_path);
 //If the current file is in root folder we don't need it's parent directory
 if ($first_parent == "/"){
 	$first_parent = $full_path;
@@ -50,24 +50,45 @@ switch ($first_parent) {
 	case '/page2.php':
 		$NAV_PAGE="page_2";
 		$CURRENT_PAGE="page_2";
-		$PAGE_TITLE="Page 2";
-		$PAGE_DESCRIPTION="This is a description for Page 2"
+		$PAGE_TITLE="Page 2 | Example Site";
+		$PAGE_DESCRIPTION="This is a description for Page 2";
 		break;
 
 	//Page 3
 	case '/page3.php':
 		$NAV_PAGE="page_3";
 		$CURRENT_PAGE="page_3";
-		$PAGE_TITLE="Page 3";
-		$PAGE_DESCRIPTION="This is a description for Page 3"
-		break;	
+		$PAGE_TITLE="Page 3 | Example Site";
+		$PAGE_DESCRIPTION="This is a description for Page 3";
+		break;
+
+	//Subpage Example
+	case '/subpages':
+		$NAV_PAGE="subpages";
+		$CURRENT_PAGE="subpages";
+		$PAGE_TITLE="Subpage Home | Example Site";
+		$PAGE_DESCRIPTION="This is a description for The index of subpages_1"
+		//A seperate switch for the subpages of this folder
+		switch ($file_base) {
+			case 'sub_page_2.php':
+				$CURRENT_PAGE="subpages/sub_page_2";
+				$PAGE_TITLE="Subpage 2 | Example Site";
+				$PAGE_DESCRIPTION="This is the second subpage on the site";
+				break;
+			case 'sub_page_3.php':
+				$CURRENT_PAGE="subpages/sub_page_3";
+				$PAGE_TITLE="Subpage 3 | Example Site";
+				$PAGE_DESCRIPTION="This is the third subpage on the site";
+				break;
+		}
+		break;
 	
-	//Index.php
+	//index.php
 	default:
 		$NAV_PAGE="index";
 		$CURRENT_PAGE="index";
 		$PAGE_TITLE="Home | Example Site";
-		$PAGE_DESCRIPTION="Welcome to Example Site"
+		$PAGE_DESCRIPTION="Welcome to Example Site";
 		break;
 }
 
