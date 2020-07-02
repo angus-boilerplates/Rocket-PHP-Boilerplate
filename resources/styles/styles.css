@@ -1,6 +1,6 @@
 
 /*
- * Stylsheet
+ * Stylsheet, includes BOOTSTRAP Matched media queries (sm, md etc)
  */
 
 
@@ -20,6 +20,17 @@ body{
 	color: grey;
 }
 
+#wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#wrapper #pageheader{
+	text-align: center;
+	margin-top: 20px;
+}
+
 /*======================
  N A V B A R
 =======================*/
@@ -35,9 +46,8 @@ nav{
 
 nav ul{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
-
 
 nav ul li{
 	list-style: none;
@@ -45,7 +55,63 @@ nav ul li{
 	padding: 1rem;
 }
 
+nav ul li:hover{
+	background-color: #BFC8CC;
+}
+
 nav ul li a{
 	text-decoration: none;
 	color: #2E3031;
+	cursor: pointer;
 }
+
+/*======================
+ F O O T E R
+=======================*/
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 1.5rem;
+	background-color: #D6E1E4;
+	text-align: center;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  	
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+	#wrapper{
+		width: 85%;
+	}
+	 nav ul{
+	 	flex-direction: row;
+	 }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	
+    
+}
+
+
+
+
+

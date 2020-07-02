@@ -10,7 +10,9 @@
 	<!-- Navbar -->
 	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/navbar.php";include_once($path); ?>
 	<!-- Content -->
-	<h1> HOME PAGE </h1>
+	<div id="wrapper">
+		<h1 id="pageheader"> HOME PAGE </h1>
+	</div>
 	<!-- Footer -->
 	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
 </body>
