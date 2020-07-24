@@ -83,11 +83,19 @@ switch ($first_parent) {
 		}
 		break;
 	
-	//index.php
-	default:
+	//index.php (Home page)
+	case '/index.php':
 		$NAV_PAGE="index";
 		$CURRENT_PAGE="index";
 		$PAGE_TITLE="Home | Rocket Boilerplate";
+		$PAGE_DESCRIPTION="Welcome to Rocket Boilerplate";
+		break;
+
+	//Default (If page not defined above)
+	default:
+		$NAV_PAGE="default";
+		$CURRENT_PAGE="default";
+		$PAGE_TITLE="Rocket Boilerplate";
 		$PAGE_DESCRIPTION="Welcome to Rocket Boilerplate";
 		break;
 }
