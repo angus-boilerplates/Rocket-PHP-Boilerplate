@@ -22,7 +22,7 @@ function isCurrent($pageName){
 ?>
 
 <nav>
-	<a id="<?php isCurrent('index')?>" href="/index.php">Home</a>
+	<a id="<?php isCurrent('index')?>" href="/">Home</a>
 	<a id="<?php isCurrent('page_2')?>" href="/page_2.php">Page 2</a>
 	<a id="<?php isCurrent('page_3')?>" href="/page_3.php">Page 3</a>
 </nav>
